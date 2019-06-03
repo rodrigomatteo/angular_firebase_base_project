@@ -6,6 +6,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4444/`. The app will automatically reload if you change any of the source files.
 
+## Fake API 
+Ensure JSON server is installed locally or globally  (https://github.com/typicode/json-server). Ask for a db.json file with valid data.
+Then run `npm run server`
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
