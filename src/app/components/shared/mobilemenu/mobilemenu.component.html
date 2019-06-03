@@ -1,0 +1,10 @@
+<div class="d-sm-block d-md-none dropdown" id="responsiveMainMenu">
+  <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Constructora Victoria
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <ng-container *ngFor="let menuItem of menuUsuario">
+      <a class="dropdown-item" routerLink={{menuItem.path}}>{{menuItem.caption}}</a>
+    </ng-container>
+  </div>
+</div>

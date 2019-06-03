@@ -18,6 +18,7 @@ import { PagesComponent } from './components/pages/pages.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
+import { MobilemenuComponent } from './components/shared/mobilemenu/mobilemenu.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SidebarComponent } from './components/shared/sidebar/sidebar.component'
     NavbarComponent,
     FooterComponent,
     SidebarComponent,
-    PagesComponent
+    PagesComponent,
+    MobilemenuComponent
   ],
   imports: [
     BrowserModule,
