@@ -1,0 +1,21 @@
+<div>
+  <form (ngSubmit)="Login(f)" #f="ngForm" class="form-signin">
+
+    <span *ngIf="f.submitted && f.controls['inputEmail'].errors" class="text-danger">El nombre de usuario es obligatorio</span>
+    <label for="inputEmail" class="sr-only">Usuario</label>
+    <input type="email" id="inputEmail" name="inputEmail" [(ngModel)]="usuario.email" class="form-control" placeholder="Usuario" required autofocus>
+
+    <span *ngIf="f.submitted && f.controls['inputPassword'].errors" class="text-danger">La clave es obligatoria</span>
+    <label for="inputPassword" class="sr-only">Clave</label>
+    <input type="password" id="inputPassword" name="inputPassword" [(ngModel)]="usuario.password" class="form-control" placeholder="Clave" required>
+
+    <div class="checkbox mb-3 text-left">
+      <label>
+        <input type="checkbox" value="remember-me"> Recuérdame
+      </label>
+    </div>
+
+    <button class="btn btn-lg btn-secondary btn-block" type="submit">Ingresar</button>
+    <p class="mt-5 mb-3 text-muted">&copy; Hard as a Rock Software 2019</p>
+  </form>
+</div>

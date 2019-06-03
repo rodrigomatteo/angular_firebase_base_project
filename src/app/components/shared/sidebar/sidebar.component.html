@@ -1,0 +1,8 @@
+<div class="bg-light border-right" id="sidebar-wrapper">
+  <div class="sidebar-heading">Constructora Victoria</div>
+  <div class="list-group list-group-flush" id="navbarMainMenu">
+    <ng-container *ngFor="let menuItem of menuUsuario">
+      <a href="#" class="list-group-item list-group-item-action bg-light" routerLink={{menuItem.path}}>{{menuItem.caption}}</a>
+    </ng-container>          
+  </div>
+</div>
