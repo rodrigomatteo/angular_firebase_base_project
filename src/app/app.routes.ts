@@ -4,9 +4,11 @@ import { NopagefoundComponent } from './components/shared/nopagefound/nopagefoun
 import { LoginComponent } from './components/login/login.component';
 import { PagesComponent } from './components/pages/pages.component';
 
+import { AuthGuard } from './guards/auth.guard';
+
 const APP_ROUTES: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: '', component: PagesComponent, loadChildren: './modules/pages.module#PagesModule'},
+  { path: '', component: PagesComponent, loadChildren: './modules/pages.module#PagesModule', canActivate: [AuthGuard]},
   { path: '**', component: NopagefoundComponent }
 ];
 

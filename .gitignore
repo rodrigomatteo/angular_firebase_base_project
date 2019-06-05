@@ -44,3 +44,6 @@ Thumbs.db
 
 # data
 db.json
+
+#environment configuration
+/src/environments
