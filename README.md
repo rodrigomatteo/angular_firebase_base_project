@@ -1,4 +1,4 @@
-# Walter
+# Angular project with authentication to Firebase and JSon Server
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
